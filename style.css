@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #4b4949;
+}   
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cacaca;
+}
+.calculator{
+    background-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow:  inset  5px 5px 12px #ffffff,
+                        5px 5px 12px rgb(0, 0, 0, .16);
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+}
+textarea{
+    grid-column: span 4;
+   height: 80px;
+   text-align: end;
+   font-size: 30px;
+   background-color: #ecf0f3;
+   box-shadow:  inset  -5px -5px 12px #ffffff,
+                inset   5px 5px 12px rgb(0, 0, 0, .16);
+    border: none;
+    border-radius: 18px;
+    color: #707070;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    resize: none;
+    overflow-y: auto;
+    
+}
+
+button{
+    height: 48px;
+    width: 48px;
+    background-color: #a8a8a825;
+   box-shadow:  inset  5px 5px 12px #ffffff,
+                inset   -5px -5px 12px rgb(0, 0, 0, .16);
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    margin: 8px;
+    cursor: pointer;
+    
+
+}
+.equal{
+    width: 60px;
+    border-radius: 10px;
+    background-color: orange;
+    box-shadow:  inset  5px 5px 12px orange,
+    inset   -5px -5px 12px rgb(0, 0, 0, .16);
+    color: #ffffff;
+}
+
+#textval{
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+#textval::-webkit-scrollbar-track{
+	background-color: white;
+}
+
+#textval::-webkit-scrollbar{
+	width: 6px;
+	background-color: #ffffff;
+    
+
+}
+
+#textval::-webkit-scrollbar-thumb{
+	border-radius: 100px;
+	background-color: rgba(214, 214, 214, 0.81);
+}
+
+#c  {
+    background-color: #b3b3b3;
+} 
